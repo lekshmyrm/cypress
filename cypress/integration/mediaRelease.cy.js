@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import MediaPage from "../support/mediaPage"
+import MediaPage from "../support/mediaPage.js"
 const mediapage = new MediaPage()
 describe('NSW Media Releases Page', () => {
     before(() => {
