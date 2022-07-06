@@ -1,0 +1,14 @@
+const {defineConfig} = require('cypress')
+module.exports = defineConfig({
+  env: {
+    login_url: 'https://www.nsw.gov.au/'
+  },
+  e2e: {
+    setupNodeEvents(on, config) {
+     
+    },
+    specPattern: 'cypress/integration/*.js',
+  }
+});
+
+
