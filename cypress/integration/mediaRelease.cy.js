@@ -1,12 +1,12 @@
 /// <reference types="cypress" />
 import MediaPage from "../support/mediaPage.js"
 const mediapage = new MediaPage()
-describe('NSW Media Releases Page', () => {
+describe('I visit nsw.gov.au Media releases page', () => {
     before(() => {
       cy.visit(Cypress.env('login_url')+'/media-releases')
       })
   
-    it('Select The Premier and Search', () => {
+    it('I see an accordion named as “Filter by Minister” and inside the accordion, I select The Premier AND search', () => {
 
       mediapage.selectOption('Filter by Minister')
       mediapage.clickElement()
@@ -14,16 +14,16 @@ describe('NSW Media Releases Page', () => {
           
     })
 
-    it('Verify Grid is populated', () =>{
+    it('verify  media release item cards should be filtered based on Minister selected', () =>{
       mediapage.gridVisible()
       mediapage.shouldListCardItems()      
     })
 
-    it('Reset link should be visible',() => {
+    it('When any filter applies, I see “Reset” button',() => {
       mediapage.resetLinkVisible()  
     })
 
-    it('Click Reset button',() =>{
+    it('user clicks on “Reset” button',() =>{
       mediapage.resetLinkClick()
     })
 
