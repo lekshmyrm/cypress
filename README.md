@@ -5,7 +5,7 @@ package.json contains dependencies
 all reusable functions are wriiten in mediaPage.js within cypress/support folder
 
 To run the tests:
-Copy the URL and clone the repo
+Copy the URL and clone the repo (https://github.com/lekshmyrm/cypress.git)
 Open project in VScode and click on Terminal
 Give the command 'npx cypress open'
 Once TestRunner window opens, select E2E Testing
