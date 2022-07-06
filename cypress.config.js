@@ -4,6 +4,7 @@ module.exports = defineConfig({
     login_url: 'https://www.nsw.gov.au/'
   },
   e2e: {
+    supportFile: false,
     setupNodeEvents(on, config) {
      
     },
