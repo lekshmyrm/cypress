@@ -1,4 +1,5 @@
 # cypress
+Tests are written following POM model and business driven
 Tests are written in the file mediaRelease.cy.js within cypress/integration folder
 cypress.config file has the Base url set
 package.json contains dependencies
